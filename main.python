@@ -1,0 +1,18 @@
+import time
+import RPi.GPIO as GPIO
+
+LED_BUILTIN = 18  # Replace with the correct GPIO pin number
+
+def setup():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(LED_BUILTIN, GPIO.OUT)
+
+def loop():
+    while True:
+        GPIO.output(LED_BUILTIN, GPIO.HIGH)
+        time.sleep(1)  # Wait for 1000 milliseconds
+        GPIO.output(LED_BUILTIN, GPIO.LOW)
+        time.sleep(1)  # Wait for 1000 milliseconds
+
+setup()
+loop()
