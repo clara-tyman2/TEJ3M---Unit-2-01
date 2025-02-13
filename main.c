@@ -1,4 +1,4 @@
-// C code
+// C code for arduino blinky. Created by Clara T. TEJ3M Unit 2-01 
 //
 void setup()
 {
